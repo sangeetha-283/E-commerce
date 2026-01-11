@@ -1,0 +1,162 @@
+[
+  {
+    "name": "aglaonema-pink beauty-plant",
+    "price": 209,
+    "image": "https://via.placeholder.com/300x300?text=Plant",
+    "description": "Healthy indoor plant",
+    "category": "Indoor",
+    "countInStock": 10
+  },
+  {
+    "name": "Plant 2",
+    "price": 219,
+    "image": "https://via.placeholder.com/300x300?text=Plant",
+    "description": "Healthy indoor plant",
+    "category": "Indoor",
+    "countInStock": 10
+  },
+  {
+    "name": "Plant 3",
+    "price": 229,
+    "image": "https://via.placeholder.com/300x300?text=Plant",
+    "description": "Healthy indoor plant",
+    "category": "Indoor",
+    "countInStock": 10
+  },
+  {
+    "name": "Plant 4",
+    "price": 239,
+    "image": "https://via.placeholder.com/300x300?text=Plant",
+    "description": "Healthy indoor plant",
+    "category": "Indoor",
+    "countInStock": 10
+  },
+  {
+    "name": "Plant 5",
+    "price": 249,
+    "image": "https://via.placeholder.com/300x300?text=Plant",
+    "description": "Healthy indoor plant",
+    "category": "Indoor",
+    "countInStock": 10
+  },
+  {
+    "name": "Plant 6",
+    "price": 259,
+    "image": "https://via.placeholder.com/300x300?text=Plant",
+    "description": "Healthy indoor plant",
+    "category": "Indoor",
+    "countInStock": 10
+  },
+  {
+    "name": "Plant 7",
+    "price": 269,
+    "image": "https://via.placeholder.com/300x300?text=Plant",
+    "description": "Healthy indoor plant",
+    "category": "Indoor",
+    "countInStock": 10
+  },
+  {
+    "name": "Plant 8",
+    "price": 279,
+    "image": "https://via.placeholder.com/300x300?text=Plant",
+    "description": "Healthy indoor plant",
+    "category": "Indoor",
+    "countInStock": 10
+  },
+  {
+    "name": "Plant 9",
+    "price": 289,
+    "image": "https://via.placeholder.com/300x300?text=Plant",
+    "description": "Healthy indoor plant",
+    "category": "Indoor",
+    "countInStock": 10
+  },
+  {
+    "name": "Plant 10",
+    "price": 299,
+    "image": "https://via.placeholder.com/300x300?text=Plant",
+    "description": "Healthy indoor plant",
+    "category": "Indoor",
+    "countInStock": 10
+  },
+  {
+    "name": "Plant 11",
+    "price": 309,
+    "image": "https://via.placeholder.com/300x300?text=Plant",
+    "description": "Healthy indoor plant",
+    "category": "Indoor",
+    "countInStock": 10
+  },
+  {
+    "name": "Plant 12",
+    "price": 319,
+    "image": "https://via.placeholder.com/300x300?text=Plant",
+    "description": "Healthy indoor plant",
+    "category": "Indoor",
+    "countInStock": 10
+  },
+  {
+    "name": "Plant 13",
+    "price": 329,
+    "image": "https://via.placeholder.com/300x300?text=Plant",
+    "description": "Healthy indoor plant",
+    "category": "Indoor",
+    "countInStock": 10
+  },
+  {
+    "name": "Plant 14",
+    "price": 339,
+    "image": "https://via.placeholder.com/300x300?text=Plant",
+    "description": "Healthy indoor plant",
+    "category": "Indoor",
+    "countInStock": 10
+  },
+  {
+    "name": "Plant 15",
+    "price": 349,
+    "image": "https://via.placeholder.com/300x300?text=Plant",
+    "description": "Healthy indoor plant",
+    "category": "Indoor",
+    "countInStock": 10
+  },
+  {
+    "name": "Plant 16",
+    "price": 359,
+    "image": "https://via.placeholder.com/300x300?text=Plant",
+    "description": "Healthy indoor plant",
+    "category": "Indoor",
+    "countInStock": 10
+  },
+  {
+    "name": "Plant 17",
+    "price": 369,
+    "image": "https://via.placeholder.com/300x300?text=Plant",
+    "description": "Healthy indoor plant",
+    "category": "Indoor",
+    "countInStock": 10
+  },
+  {
+    "name": "Plant 18",
+    "price": 379,
+    "image": "https://via.placeholder.com/300x300?text=Plant",
+    "description": "Healthy indoor plant",
+    "category": "Indoor",
+    "countInStock": 10
+  },
+  {
+    "name": "Plant 19",
+    "price": 389,
+    "image": "https://via.placeholder.com/300x300?text=Plant",
+    "description": "Healthy indoor plant",
+    "category": "Indoor",
+    "countInStock": 10
+  },
+  {
+    "name": "Plant 20",
+    "price": 399,
+    "image": "https://via.placeholder.com/300x300?text=Plant",
+    "description": "Healthy indoor plant",
+    "category": "Indoor",
+    "countInStock": 10
+  }
+]
