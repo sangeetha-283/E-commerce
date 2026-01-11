@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useCart } from "../context/CartContext";
 import { Link } from "react-router-dom";
+import api from "../utils/axios";
 import heroImage from '../assets/hero-image.jpg'
 
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/products")
+      .get("/products")
       .then((res) => setProducts(res.data.slice(0, 4))) // featured
       .catch(console.error);
   }, []);

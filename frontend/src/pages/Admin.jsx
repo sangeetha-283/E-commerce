@@ -4,7 +4,7 @@ export default function Admin() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/products")
+    fetch("/products")
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) =>{
