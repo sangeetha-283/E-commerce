@@ -9,21 +9,19 @@ export default function Home() {
   const { addToCart } = useCart();
   const [products, setProducts] = useState([]);
 
-  useEffect(() => {
-    axios
-      .get("/products")
-.then((res) => {
-  const data = res.data;
-  if (Array.isArray(data)) {
-    setProducts(data.slice(0, 4));
-  } else if (Array.isArray(data.products)) {
-    setProducts(data.products.slice(0, 4));
-  } else {
-    setProducts([]);
-  }
-})
-.catch(() => setProducts([]));
-  }, []);
+useEffect(() => {
+  api
+    .get("/products")
+    .then((res) => {
+      const data = res.data;
+      if (Array.isArray(data)) {
+        setProducts(data.slice(0, 4));
+      } else {
+        setProducts([]);
+      }
+    })
+    .catch(() => setProducts([]));
+}, []);
 
   return (
     <div>
