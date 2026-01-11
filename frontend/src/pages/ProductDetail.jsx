@@ -69,7 +69,10 @@ export default function ProductDetail() {
           </div>
 
           <button
-            onClick={handleAddToCart}
+            onClick={() => {
+                addToCart(p);
+                alert("Added to cart");
+              }}
             className="w-full bg-green-500 hover:bg-green-700 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
           >
             Add to Cart
