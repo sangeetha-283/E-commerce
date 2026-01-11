@@ -5,7 +5,7 @@ import { useCart } from "../context/CartContext";
 
 export default function Products() {
   const { addToCart } = useCart();
-  const [products, setProducts] = useState([]); // MUST be array
+  const [products, setProducts] = useState([]); 
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -14,8 +14,7 @@ export default function Products() {
         console.log("Fetching products...");
         const { data } = await api.get("/products");
         console.log("API DATA:", data);
-
-        // ✅ SAFE HANDLING (IMPORTANT FIX)
+       
         if (Array.isArray(data)) {
           setProducts(data);
         } else if (Array.isArray(data.products)) {

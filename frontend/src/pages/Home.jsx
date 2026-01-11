@@ -12,8 +12,17 @@ export default function Home() {
   useEffect(() => {
     axios
       .get("/products")
-      .then((res) => setProducts(res.data.slice(0, 4))) // featured
-      .catch(console.error);
+.then((res) => {
+  const data = res.data;
+  if (Array.isArray(data)) {
+    setProducts(data.slice(0, 4));
+  } else if (Array.isArray(data.products)) {
+    setProducts(data.products.slice(0, 4));
+  } else {
+    setProducts([]);
+  }
+})
+.catch(() => setProducts([]));
   }, []);
 
   return (
