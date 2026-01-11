@@ -13,10 +13,8 @@ export default function Products() {
       try {
         console.log("Fetching products...");
         const { data } = await api.get("/products");
-
-        console.log("API DATA:", data);
-
-        setProducts(data);
+       console.log("API DATA:", data);
+        setProducts(data.products || data);
         setLoading(false);
       } catch (error) {
         console.error("Product fetch error:", error);
@@ -31,13 +29,14 @@ export default function Products() {
     return <p className="p-6">Loading products...</p>;
   }
 
-  if (products.length === 0) {
+  if (!Array.isArray(products) || products.length === 0) {
     return <p className="p-6">No products found</p>;
   }
 
   return (
   <div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-6">
-    {products.map((p) => (
+    {Array.isArray(products) &&
+  products.map((p) => (
       <div
         key={p._id}
         className="border p-4 rounded shadow bg-white hover:shadow-xl transition-shadow"
