@@ -1,3 +1,4 @@
+import { useCart } from "../context/CartContext";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import api from "../utils/axios";
@@ -6,6 +7,7 @@ export default function ProductDetail() {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
+  const { addToCart } = useCart();
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -70,7 +72,7 @@ export default function ProductDetail() {
 
           <button
             onClick={() => {
-                addToCart(p);
+                addToCart(product);
                 alert("Added to cart");
               }}
             className="w-full bg-green-500 hover:bg-green-700 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
