@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import api from "../utils/axios";
 import { useCart } from "../context/CartContext";
 
 export default function Products() {
@@ -12,9 +12,8 @@ export default function Products() {
     const fetchProducts = async () => {
       try {
         console.log("Fetching products...");
-        const { data } = await axios.get(
-          "http://localhost:5000/api/products"
-        );
+        const { data } = await api.get("/products");
+
         console.log("API DATA:", data);
 
         setProducts(data);

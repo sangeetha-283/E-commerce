@@ -12,7 +12,15 @@ import orderRoutes from "./routes/orderRoutes.js";
 dotenv.config();
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://your-vercel-app.vercel.app"
+    ],
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI)
